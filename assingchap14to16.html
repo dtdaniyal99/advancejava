@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("==================Question # 1====================<br><br>");
+        var StudentsName=[];
+        document.write("==================Question # 2====================<br><br>");
+        var srtingArray=['daniyal','basit','bilal'];
+        document.write("==================Question # 3====================<br><br>");
+        var NumberArray=[1,2,3,4,5];
+        document.write("==================Question # 4====================<br><br>");
+        var MixdArray=['daniyal',1,'basit',2,3,'bilal'];
+        document.write("==================Question # 5====================<br><br>");
+        var EducationQualification=['SSC',' HSC', 'BCS', 'BS', 'BCOM', 'MS', 'M. Phil.', 'PhD'];
+        document.write('<ol>');
+        for(var i=0; i<EducationQualification.length;i++){
+            
+            document.write('<li> '+EducationQualification[i]+'</li>');
+            
+        }
+        document.write('</ol>');
+        document.write("==================Question # 6====================<br><br>");
+        StudentsName=['Michael','john','Tony'];
+        var TotalMarks = 500;
+        var score=[320,230,480];
+        var percentage;
+        for(var i=0;i<StudentsName.length;i++){
+            percentage = score[i]*100/TotalMarks;
+            document.write('score of '+StudentsName[i]+' is '+score[i]+' Percentage is '+percentage+'% <br>');
+        }
+        document.write("==================Question # 7====================<br><br>");
+        var color=['black','green','white'];
+        document.write("colors Array<br>");
+        
+        /* for(var h=0;h<color.length;h++){
+            document.write(color[h],'<br>');
+        }
+        document.write("After Adding color in the biegning<br>");
+        color.unshift(prompt("enter two colors in the bigning of the array"))
+        for(var i=0;i<color.length;i++){
+            document.write(color[i],"<br>");
+        }
+        document.write("After Adding color in the end of the array<br>");
+        color.push(prompt("enter two colors in the End of the array<br>"))
+        for(var j=0;j<color.length;j++){
+            document.write(color[j],"<br>");
+        } */
+        document.write("adding two color in the bigning<br>");
+        for(var k=0;k<2;k++){
+            color.unshift(prompt("enter two colors in the bigning of the array"))
+        }
+        for(var l=0;l<color.length;l++){
+            document.write(color[l],"<br>");
+        }
+
+    </script>
+</body>
+</html>

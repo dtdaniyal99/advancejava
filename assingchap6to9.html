@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assingmntchap6to9</title>
+    <script>
+         var a = 10;
+        document.write("Result<br>");
+        document.write("value of A is "+a+"<br>");
+        document.write("---------------------------<br>");
+        
+        document.write("The value of ++a is ");
+        document.write(++a);
+        document.write("<br>Now the value of a is"+a+"<br>");
+        
+        document.write("---------------------------<br>");
+        
+        document.write("The value of a++ is"+a++);
+        document.write("<br>Now the value of a is "+a+"<br>")
+        document.write("---------------------------<br>");
+        document.write("The value of --a is ");
+        document.write(--a);
+        document.write("<br>Now the value of a is"+a+"<br>");
+        
+        document.write("---------------------------<br>");
+        
+        document.write("The value of a-- is"+a--);
+        document.write("<br>Now the value of a is "+a+"<br>");
+
+         document.write("======================= Question 2 ====================<br>")
+        var a = 2;
+        var b = 1;
+        var result;
+         document.write("a is : "+a+'<br>');
+        document.write("b is : "+b+'<br>');
+        --a;
+        document.write("valu of --a is : "+a+'<br>')
+        result = a - --b;
+        document.write("value of --a - --b is : "+result+'<br>');
+        var result1 = result + ++b;
+        document.write("value of --a - --b + ++b is : "+result1+'<br>');
+        var result2 = result1 + b--;
+        document.write("value of --a - --b + ++b + b-- is : "+result2+'<br>');
+    
+        document.write("Result Is "+result2+"<br>"); 
+
+        document.write("======================= Question 3 ====================<br>");
+
+        var greating = prompt("Enter your Name :");
+        alert("Cogratulation! Mr "+greating+"you won this World Cup");
+
+        document.write("======================= Question 4 ====================<br>");
+        var num1 = prompt("Enter Number");
+        if(num1!=undefined){
+            document.write('<table border = "1" cellspacing = "0">')
+            for(var i=1; i<=10;i++ ){
+                document.write("<tr><td>"+num1+"x"+i+"="+(i*num1))
+                    document.write("</td></tr>")
+                
+            }
+            document.write('</table>')
+        }
+        else{
+            var num=5;
+            document.write('<table border = "1" cellspacing = "0">')
+            for(var j=1;j<=10;j++){
+                document.write("<tr><td>"+num+"x"+j+"="+(j*num))
+                    document.write("</td></tr>")
+            }
+            document.write('</table>')
+        }
+        
+        document.write("======================= Question 5 ====================<br>");
+        var subject1 = prompt("Enter your Subject : ");
+        var subject2 = prompt("Enter your Subject : ");
+        var subject3 = prompt("Enter your Subject : ");
+        var tmesubject = 100;
+        var obtm1 = parseInt(prompt("Obtained marks for "+subject1)); 
+        var obtm2 = parseInt(prompt("Obtained marks for "+subject2));
+        var obtm3 = parseInt(prompt("Obtained marks for "+subject3));
+        var totalmarks = 300;
+        var Tobtm = (obtm1+obtm2+obtm3);
+        document.write('<table border = "1"> ');
+            document.write("<tr><th> Subjects </th> <th>Total marks</th> <th> Obtained marks </th><th> Percentage </th></tr>");
+            document.write("<tr><td>"+subject1+"</td>"+"<td>"+tmesubject+"</td>"+"<td>"+obtm1+"</td>"+"<td>"+(obtm1*100)/tmesubject+"%</td></tr>");
+                document.write("<tr><td>"+subject2+"</td>"+"<td>"+tmesubject+"</td>"+"<td>"+obtm2+"</td>"+"<td>"+(obtm2*100)/tmesubject+"%</td></tr>");
+                    document.write("<tr><td>"+subject3+"</td>"+"<td>"+tmesubject+"</td>"+"<td>"+obtm3+"</td>"+"<td>"+(obtm3*100)/tmesubject+"%</td></tr>");
+                    document.write("<tr><td></td>"+"<td>"+totalmarks+"</td>"+"<td>"+Tobtm+"</td>"+"<td>"+(Tobtm*100)/totalmarks+"%</td></tr>");
+            document.write("</table>");
+        
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

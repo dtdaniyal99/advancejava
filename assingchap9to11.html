@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+         document.write("=========== Question # 1 =============<br>");
+        var city = prompt("Enter City ");
+        if (city == "karachi"||city=="Karachi"){
+            alert("welcome to the city of lights");
+        }else{
+            alert("welcome to "+city);
+        }
+        document.write("=========== Question # 2 =============<br>");
+        var gender = prompt("Enter Your Gender ");
+        if (gender == "male"||gender == "Male"){
+            alert("Good Morning Sir");
+
+        }else if(gender == "female"||gender == "Female"){
+            alert("Good morning mam");
+        }else{
+            alert("Enter correct gender")
+        }
+        document.write("=========== Question # 3 =============<br>");
+        
+        var signal_color = prompt("Enter signal light")
+        if(signal_color == "red"||signal_color == "Red"||signal_color == "RED"){
+        
+            alert(signal_color+"          "+"Must Stop")
+        
+        }else if(signal_color == "yellow"||signal_color == "Yellow"||signal_color == "YELLOW"){
+            
+            alert(signal_color+"        "+"READY TO MOVE")
+        
+        }else if(signal_color == "green"||signal_color == "Green"||signal_color == "GREEN"){
+            
+            alert(signal_color+"        "+"MOVE KNOW")
+
+        }else{
+            alert("Enter correct color"+"<br>");
+        }
+        document.write("=========== Question # 4 =============<br>");
+        var chkpetrol = .25;
+        var remainingpetrol = prompt("Enter Remaining petrol ");
+        if(remainingpetrol<.25){
+            alert("Please refill petrol in your car")
+        }else{
+            alert("YOUR FULE LEVEL IS GOOD CHK AFTER SOME TIME")
+        } 
+
+        document.write("=========== Question # 5 =============<br>");
+
+        var a = 4;
+            if (++a === 5){
+                alert("given condition for variable a is true");
+            }
+
+        var b = 82;
+            if (b++ === 83){
+                alert("given condition for variable b is true");
+            }
+        var c = 12;
+            if (c++ === 13){
+                alert("condition 1 is true");
+            }
+            if (c === 13){
+                alert("condition 2 is true");
+            }
+            if (++c < 14){
+                alert("condition 3 is true");
+            }
+            if(c === 14){
+                alert("condition 4 is true");
+            }
+        var materialCost = 20000;
+        var laborCost = 2000;
+        var totalCost = materialCost + laborCost;
+            if (totalCost === laborCost + materialCost){
+                alert("The cost equals");
+            }
+            if (true){
+                alert("True");
+            }
+            if (false){
+                alert("False");
+            }
+
+            if("car" < "cat"){
+                alert("car is smaller than cat");
+            } 
+            document.write("=========== Question # 6 =============<br>");
+            var Totalmarks = 300;
+            var Totalmarksobtained;
+            var subj1 = parseInt(prompt("Enter your English Marks :"));
+            var subj2 = parseInt( prompt("Enter your Maths Marks :"));
+            var subj3 = parseInt(prompt("Enter your Urdu Marks :"));
+            Totalmarksobtained = subj1+subj2+subj3;
+            var percentage = (Totalmarksobtained*100)/Totalmarks;
+            percentage_1=percentage.toFixed(2);
+            if(percentage >= 80){
+                document.write("<h1>Mark Sheet</h1>");
+                document.write("Total marks :"+Totalmarks+"<br>");
+                document.write("Marks Obtained :"+Totalmarksobtained+"<br>");
+                document.write("Percentage :"+percentage_1+"%<br>");
+                document.write("Grade : A-one<br>");
+                document.write("Remarks: Excelent<br>");
+            }else if(percentage >= 70){
+                document.write("<h1>Mark Sheet</h1>");
+                document.write("Total marks :"+Totalmarks+"<br>");
+                document.write("Marks Obtained :"+Totalmarksobtained+"<br>");
+                document.write("Percentage :"+percentage_1+"%<br>");
+                document.write("Grade : A<br>");
+                document.write("Remarks : Good<br>");
+            }else if(percentage >= 60){
+                document.write("<h1>Mark Sheet</h1>");
+                document.write("Total marks :"+Totalmarks+"<br>");
+                document.write("Marks Obtained :"+Totalmarksobtained+"<br>");
+                document.write("Percentage :"+percentage_1+"%<br>");
+                document.write("Grade : B<br>");
+                document.write("Remarks : You Need To Improve <br>");
+            }else{
+                document.write("<h1>Mark Sheet</h1>");
+                document.write("Total marks :"+Totalmarks+"<br>");
+                document.write("Marks Obtained :"+Totalmarksobtained+"<br>");
+                document.write("Percentage :"+percentage_1+"%<br>");
+                document.write("Grade : C <br>");
+                document.write("Remarks : Fail! <br>");
+            } 
+
+            document.write("=========== Question # 7 =============<br>");
+             var secret_num = (Math.floor(Math.random()*10)+1)
+             var guess_num = parseInt(prompt("pleas Guess a num from 1 to 10 :" ));
+             if (secret_num == guess_num){
+                 document.write("secret Num :"+secret_num+"<br>")
+                 document.write("Guess Num :"+guess_num+"<br>")
+                 alert("Bingo!!! Correct Answer");
+             }else if(guess_num+1 == secret_num||guess_num-1 == secret_num){
+                document.write("secret Num :"+secret_num+"<br>")
+                 document.write("Guess Num :"+guess_num+"<br>")
+                 alert("Close enough to the correct Answer ")
+             } 
+             else {
+                document.write("secret Num :"+secret_num+"<br>")
+                 document.write("Guess Num :"+guess_num+"<br>")
+                 alert("Better Luck Next time");
+             }
+             document.write("=========== Question # 8 =============<br>");
+
+             var num_1 = parseInt(prompt("Enter num to chk it is devisible by 3 or not?"));
+             if(num_1 % 3 == 0){
+                 alert(num_1+"is divisible by 3 <br>")
+             }else{
+                 alert(num_1+"it's not divisible bye 3<br>")
+
+             }
+             document.write("=========== Question # 9 =============<br>");
+             var num_2 = parseInt(prompt("Enter Num to cheack odd or even"));
+             if(num_2 % 2 == 0){
+                 alert(num_2+" is Even Number<br>");
+             }else{
+                alert(num_2+" is Odd Number<br>");   
+             }
+             document.write("=========== Question # 10 =============<br>");
+
+             var temp = parseInt(prompt("Enter Temperature "));
+             if(temp > 40){
+                 alert(temp+"°C It's too hot outside <br>")
+             }else if(temp > 30){
+                alert(temp+"°C The weather today is normal <br>")
+             }
+             else if(temp > 20){
+                alert(temp+"°C To days Weather is too cool <br>")
+             }
+             else if(temp > 10){
+                alert(temp+"°C OMG! to days Weather is soo Cool <br>")
+             }
+             document.write("=========== Question # 11 =============<br>");
+             var firstnum = parseInt(prompt("Enter Num 1"));
+             var secondnum = parseInt(prompt("Enter Num 2"));
+             var operator = prompt("Enter operation to perform");
+             var operation;
+
+             if(operator == "+"){
+                 document.write("Number 1 is "+firstnum+'<br>');
+                 document.write("Number 1 is "+secondnum+'<br>');
+                 operation = firstnum+secondnum;
+                 document.write("Addition of two num is "+operation+'<br>');
+             } else if(operator == "-"){
+                document.write("Number 1 is "+firstnum+'<br>');
+                 document.write("Number 1 is "+secondnum+'<br>');
+                 operation = firstnum-secondnum;
+                 document.write("Subtraction of two num is "+operation+'<br>');
+             } else if(operator == "*"){
+                document.write("Number 1 is "+firstnum+'<br>');
+                 document.write("Number 1 is "+secondnum+'<br>');
+                 operation = firstnum*secondnum;
+                 document.write("Multiplication of two num is "+operation+'<br>');
+                 
+             }else if(operator == "/"){
+                document.write("Number 1 is "+firstnum+'<br>');
+                 document.write("Number 1 is "+secondnum+'<br>');
+                 operation = firstnum/secondnum;
+                 document.write("Division of two num is "+operation+'<br>');
+             }else{
+                document.write("Number 1 is "+firstnum+'<br>');
+                 document.write("Number 1 is "+secondnum+'<br>');
+                 operation = firstnum%secondnum;
+                 document.write("moduluds of two num is "+operation+'<br>');
+             } 
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
